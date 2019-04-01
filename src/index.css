@@ -1,21 +1,45 @@
 body {
-  margin     : 0;
-  padding    : 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family            : "Segoe UI", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
   -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.container {
+  display         : flex;
+  margin          : 0 auto;
+  align-content   : center;
+  flex-direction  : row;
+  background-color: #f7d240;
+  width           : 70%;
+  height          : 50vh;
+  padding         : 20px;
 }
+
+.sender {
+  display        : flex;
+  flex-grow      : 1;
+  justify-content: flex-start;
+  overflow-wrap  : break-word;
+}
+
+.recipient {
+  display        : flex;
+  flex-grow      : 2;
+  align-content  : center;
+  justify-content: center;
+  flex-direction : column;
+}
+
+.stamp {
+  display        : flex;
+  flex-grow      : 1;
+  justify-content: flex-end;
+}
+
 
 .addressLabel p {
   font-weight: bold;
-  line-height: 1vh;
+  line-height: 2vh;
 }
 
 .stampLabel {

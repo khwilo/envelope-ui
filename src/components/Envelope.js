@@ -6,7 +6,7 @@ import Stamp from './Stamp';
 const Envelope = ({ letter }) => {
     const { from, to, stamp } = letter;
     return (
-        <div>
+        <div className="container">
             <div className="sender">
                 <AddressLabel person={from}/>
             </div>
