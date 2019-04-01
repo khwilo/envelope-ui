@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const AddressLabel = ({ person }) => {
     return (
-        <div>
+        <div className="addressLabel">
             <p>{person.fullname}</p>
             <p>{person.street}</p>
             <p>{person.address}</p>
