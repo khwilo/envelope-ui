@@ -17,3 +17,21 @@ code {
   font-weight: bold;
   line-height: 1vh;
 }
+
+.stampLabel {
+  border         : 2px solid #808080;
+  width          : 80px;
+  height         : 100px;
+  display        : flex;
+  justify-content: center;
+  align-content  : center;
+  flex-direction : column;
+}
+
+.stampLabel p {
+  margin     : 0 auto;
+  transform  : rotate(-30deg);
+  font-size  : 24px;
+  color      : #808080;
+  font-weight: bold;
+}
