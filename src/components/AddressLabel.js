@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const AddressLabel = ({ person }) => {
     return (
@@ -8,6 +9,14 @@ const AddressLabel = ({ person }) => {
             <p>{person.address}</p>
         </div>
     );
+};
+
+AddressLabel.propTypes = {
+    person: PropTypes.shape({
+        fullname: PropTypes.string.isRequired,
+        street  : PropTypes.string.isRequired,
+        address : PropTypes.string.isRequired
+    }).isRequired
 };
 
 export default AddressLabel;
