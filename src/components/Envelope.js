@@ -1,9 +1,10 @@
 import React from 'react';
 
 import AddressLabel from './AddressLabel';
+import Stamp from './Stamp';
 
 const Envelope = ({ letter }) => {
-    const { from, to } = letter;
+    const { from, to, stamp } = letter;
     return (
         <div>
             <div className="sender">
@@ -11,6 +12,9 @@ const Envelope = ({ letter }) => {
             </div>
             <div className="recipient">
                 <AddressLabel person={to} />
+            </div>
+            <div className="stamp">
+                <Stamp stamp={stamp} />
             </div>
         </div>
     );
