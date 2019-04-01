@@ -14,6 +14,7 @@ const letter = {
         street  : "123 Fake St.",
         address : "San Fransisco, CA 94101",
     },
+    stamp: "STAMP",
 };
 
 ReactDOM.render(<Envelope letter={letter} />, document.getElementById('root'));
