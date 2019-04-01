@@ -2,7 +2,9 @@ import React from 'react';
 
 const Stamp = ({ stamp }) => {
     return (
-        <div>{stamp}</div>
+        <div className="stampLabel">
+            <p>{stamp}</p>
+        </div>
     );
 };
 
